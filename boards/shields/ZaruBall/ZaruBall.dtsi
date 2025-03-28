@@ -1,13 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h> // included when matrix transform added
 #include <physical_layouts.dtsi> // When using keys property include needed
 
-/ {
-    ext_power: ext_power {
-        compatible = "zmk,ext-power-generic";
-        status = "okay";
-    };
-};
-
 // chosen node
 / {
     chosen {
