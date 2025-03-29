@@ -9,6 +9,14 @@
     };
 };
 
+/ {
+    ext_power: ext_power {
+        compatible = "zmk,ext-power-generic";
+        gpios = <&gpio1 10 GPIO_ACTIVE_HIGH>;  // GPIO 1.10 を電源制御に使用
+        status = "okay";
+    };
+};
+
 // physical layouts (key propretyあり)
 / {
     physical_layout0: physical_layout0 {
