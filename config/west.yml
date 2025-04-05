@@ -2,10 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: eswai
-      url-base: https://github.com/eswai
     - name: inorichi
       url-base: https://github.com/inorichi
+    - name: eswai
+      url-base: https://github.com/eswai
     - name: caksoylar
       url-base: https://github.com/caksoylar
   projects:
@@ -13,11 +13,11 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-naginata
-      remote: eswai
-      revision: main
     - name: zmk-pmw3610-driver
       remote: inorichi
+      revision: main
+    - name: zmk-naginata
+      remote: eswai
       revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
