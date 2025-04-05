@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: inorichi
       url-base: https://github.com/inorichi
-    - name: eswai
-      url-base: https://github.com/eswai
+    - name: ImSota
+      url-base: https://github.com/ImSota
     - name: caksoylar
       url-base: https://github.com/caksoylar
   projects:
@@ -17,7 +17,7 @@ manifest:
       remote: inorichi
       revision: main
     - name: zmk-naginata
-      remote: eswai
+      remote: ImSota
       revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
