@@ -1,16 +1,21 @@
 manifest:
   remotes:
-    - name: ImSota
-      url-base: https://github.com/ImSota
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: eswai
+      url-base: https://gihub.com/eswai
     - name: inorichi
       url-base: https://github.com/inorichi
     - name: caksoylar
       url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-      remote: zmk
+      remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-naginata
+      remote: eswai
+      revision: main
     - name: zmk-pmw3610-driver
       remote: inorichi
       revision: main
