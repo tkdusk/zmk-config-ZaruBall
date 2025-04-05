@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: eswai
-      url-base: https://gihub.com/eswai
+      url-base: https://github.com/eswai
     - name: inorichi
       url-base: https://github.com/inorichi
     - name: caksoylar
