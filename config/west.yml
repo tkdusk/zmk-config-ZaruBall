@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/Xoffio
+      url-base: https://github.com/zmkfirmware
     - name: inorichi
       url-base: https://github.com/inorichi
     - name: ImSota
@@ -11,7 +11,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: xo-status-fx
+      revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: inorichi
