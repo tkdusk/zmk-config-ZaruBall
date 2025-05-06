@@ -41,11 +41,14 @@
     - name: zmk-pmw3610-driver
       remote: inorichi
       revision: main
+      import: false
     - name: zmk-naginata
       remote: ImSota
       revision: main
+      import: false
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
+      import: false
   self:
     path: config
