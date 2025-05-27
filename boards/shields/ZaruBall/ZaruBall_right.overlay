@@ -127,7 +127,7 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        trackball_scroller: scroller_0 {
+        trackball_scroller: scroller {
             // Please define in your .keymap
             layers = <3>;
             input-processors = <&zip_xy_scaler 1 60 &zip_xy_to_scroll_mapper>;
