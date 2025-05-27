@@ -1,7 +1,7 @@
 #include "ZaruBall.dtsi"
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
-//#include <dt-bindings/zmk/input_transform.h>
+#include <dt-bindings/zmk/input_transform.h>
 
 
 // matrix transformでのピン数オフセット
