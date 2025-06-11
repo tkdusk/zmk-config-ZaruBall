@@ -1,5 +1,6 @@
 #include "ZaruBall.dtsi"
-//#include <dt-bindings/zmk/input_transform.h>
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
 &xiao_serial { status = "disabled"; };
 
@@ -63,9 +64,8 @@
     };
 };
 
-/ {
-  trackball_listener {
+&trackball_listener {
+    status = "okay";
     compatible = "zmk,input-listener";
     device = <&trackball>;
-  };
 };
