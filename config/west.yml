@@ -9,6 +9,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: ImSota
       url-base: https://github.com/ImSota
+    - name: zettaface
+      url-base: https://github.com/zettaface
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -22,6 +24,9 @@ manifest:
       revision: main
     - name: zmk-naginata
       remote: ImSota
+      revision: main
+    - name: zmk-input-processor-keybind
+      remote: zettaface
       revision: main
   self:
     path: config
