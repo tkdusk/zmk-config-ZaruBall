@@ -48,7 +48,7 @@
     device = <&trackball>;
     
     keybind {
-        layers = <RAISE>;
+        layers = <4>;
         input-processors = <
                             &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)
                             &zip_keybind_keys>;
