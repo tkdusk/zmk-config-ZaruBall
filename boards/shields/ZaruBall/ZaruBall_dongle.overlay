@@ -1,0 +1,32 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+#include "ZaruBall.dtsi"
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &physical_layout0;
+    };
+
+    mock_kscan: mock_kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
+
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+&trackball_listener {
+    status = "okay";
+
+    input-processors = <&zip_temp_layer 4 500>;
+    scroll {
+        layers = <3>;
+        input-processors =
+            <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
+            <&zip_xy_to_scroll_mapper>;
+    };
+};
