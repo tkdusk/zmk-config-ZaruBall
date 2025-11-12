@@ -11,8 +11,8 @@ manifest:
       url-base: https://github.com/ImSota
     # - name: zettaface
     #   url-base: https://github.com/zettaface
-    - name: prospector
-      url-base: https://github.com/t-ogura
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -31,8 +31,7 @@ manifest:
     #   remote: zettaface
     #   revision: main
     - name: prospector-zmk-module
-      remote: prospector
-      revision: v1.0.0
-      path: modules/prospector-zmk-module
+      remote: carrefinho 
+      revision: main   
   self:
     path: config
