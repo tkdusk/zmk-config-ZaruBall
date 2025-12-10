@@ -24,9 +24,9 @@ manifest:
     # - name: zmk-rgbled-widget
     #   remote: caksoylar
     #   revision: main
-    # - name: zmk-naginata
-    #   remote: ImSota
-    #   revision: main
+    - name: zmk-naginata
+      remote: ImSota
+      revision: main
     # - name: zmk-input-processor-keybind
     #   remote: zettaface
     #   revision: main
