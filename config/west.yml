@@ -18,9 +18,9 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-pmw3610-driver
-      remote: badjeff
-      revision: main
+    # - name: zmk-pmw3610-driver
+    #   remote: badjeff
+    #   revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main
@@ -30,9 +30,9 @@ manifest:
     # - name: zmk-input-processor-keybind
     #   remote: zettaface
     #   revision: main
-    - name: prospector-zmk-module
-      remote: prospector
-      revision: v1.0.0
-      path: modules/prospector-zmk-module
+    # - name: prospector-zmk-module
+    #   remote: prospector
+    #   revision: v1.0.0
+    #   path: modules/prospector-zmk-module
   self:
     path: config
