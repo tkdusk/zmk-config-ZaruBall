@@ -206,7 +206,6 @@
         // evt-type = <INPUT_EV_REL>;
         zephyr,axis-x = <INPUT_REL_X>;
         zephyr,axis-y = <INPUT_REL_Y>;
-        swap-xy;
         invert-x;
         invert-y;
 
