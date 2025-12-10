@@ -3,16 +3,16 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: badjeff
-      url-base: https://github.com/badjeff
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
+    # - name: badjeff
+    #   url-base: https://github.com/badjeff
+    # - name: caksoylar
+    #   url-base: https://github.com/caksoylar
     - name: ImSota
       url-base: https://github.com/ImSota
     # - name: zettaface
     #   url-base: https://github.com/zettaface
-    - name: prospector
-      url-base: https://github.com/t-ogura
+    # - name: prospector
+    #   url-base: https://github.com/t-ogura
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -21,12 +21,12 @@ manifest:
     # - name: zmk-pmw3610-driver
     #   remote: badjeff
     #   revision: main
-    - name: zmk-rgbled-widget
-      remote: caksoylar
-      revision: main
-    - name: zmk-naginata
-      remote: ImSota
-      revision: main
+    # - name: zmk-rgbled-widget
+    #   remote: caksoylar
+    #   revision: main
+    # - name: zmk-naginata
+    #   remote: ImSota
+    #   revision: main
     # - name: zmk-input-processor-keybind
     #   remote: zettaface
     #   revision: main
