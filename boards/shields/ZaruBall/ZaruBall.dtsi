@@ -204,8 +204,8 @@
         motion-gpios = <&gpio1 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         res-cpi = <600>;
         // evt-type = <INPUT_EV_REL>;
-        axis_x = <REL_X>;
-        axis_y = <REL_Y>;
+        axis_x = <INPUT_REL_X>;
+        axis_y = <INPUT_REL_Y>;
 
         force-awake;
         /* keep the sensor awake while ZMK activity state is ACTIVE,
