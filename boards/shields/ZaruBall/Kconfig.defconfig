@@ -26,10 +26,10 @@ config ZMK_POINTING
 
 endif
 
-if SHIELD_ZARUBALL_RIGHT
+# if SHIELD_ZARUBALL_RIGHT
 
-# Assuming pointing device uses SPI
-config SPI
-    default y
+# # Assuming pointing device uses SPI
+# config SPI
+#     default y
 
-endif
+# endif

@@ -31,7 +31,7 @@ manifest:
     #   remote: zettaface
     #   revision: main
     - name: prospector-zmk-module
-      remote: carrefinho 
+      remote: ImSota
       revision: main
   self:
     path: config
