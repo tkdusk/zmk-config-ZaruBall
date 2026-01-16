@@ -6,16 +6,23 @@ manifest:
       url-base: https://github.com/badjeff
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: ImSota
+      url-base: https://github.com/ImSota
+    - name: ImSota
+      url-base: https://github.com/ImSota
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: badjeff
+      remote: ImSota
       revision: zmk-0.3
     - name: zmk-rgbled-widget
       remote: caksoylar
+      revision: main
+    - name: zmk-twist-sync
+      remote: ImSota
       revision: main
   self:
     path: config

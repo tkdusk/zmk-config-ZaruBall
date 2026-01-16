@@ -1,0 +1,57 @@
+#include <behaviors/rgbled_widget.dtsi>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+
+#define BASE 0
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_boot {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&bootloader>;
+        };
+    };
+};
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        base_layer {
+            display-name = "Base";
+            bindings = <&mkp RCLK &mkp LCLK>;
+        };
+    };
+};
+
+//trackball
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+/ {
+    /* 1. プロセッサのインスタンス作成 */
+    twist_sync: twist_sync {
+        compatible = "zmk,feature-twistsync";
+        #input-processor-cells = <2>;
+        sensor-right = <&trackball1>;   // 右側面センサーのラベル
+        sensor-bottom = <&trackball2>;  // 下側面センサーのラベル
+    };
+
+    /* 2. 各リスナーに適用 */
+    trackball_listener_right {
+        compatible = "zmk,input-listener";
+        device = <&trackball1>;
+        input-processors = <&twist_sync 2 4>; // 感度, スクロール倍率
+    };
+
+    trackball_listener_bottom {
+        compatible = "zmk,input-listener";
+        device = <&trackball2>;
+        input-processors = <&twist_sync 2 4>;
+    };
+};

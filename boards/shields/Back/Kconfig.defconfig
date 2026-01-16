@@ -1,0 +1,14 @@
+if SHIELD_BACK
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "Back"
+
+# Input Device(pmw3610)のためのコンフィグ
+config ZMK_POINTING
+    default y
+
+config SPI
+    default y
+
+endif
