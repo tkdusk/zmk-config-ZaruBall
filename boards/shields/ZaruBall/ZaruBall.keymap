@@ -6,6 +6,18 @@
 //#include <dt-bindings/zmk/mouse.h>
 #include <behaviors/rgbled_widget.dtsi>
 
+&trackball_listener {
+    input-processors = <//&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)
+                        &zip_temp_layer MOUSE 500>;
+    scroller {
+        layers = <SCROLL>;
+        input-processors = <
+                            &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
+                            &zip_xy_scaler 1 20
+                            &zip_xy_to_scroll_mapper
+                            >;
+    };
+};
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
